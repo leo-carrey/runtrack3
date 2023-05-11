@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button onclick="mixPosition()">click for mix</button>
+    <article id="article1" ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+    <div id="images">
+        <img id="drag6" src="arc-en-ciel/arc6.png" draggable="true" ondragstart="drag(event)" width="30" height="80">
+        <img id="drag3" src="arc-en-ciel/arc3.png" draggable="true" ondragstart="drag(event)" width="30" height="80">
+        <img id="drag1" src="arc-en-ciel/arc1.png" draggable="true" ondragstart="drag(event)" width="30" height="80">
+        <img id="drag4" src="arc-en-ciel/arc4.png" draggable="true" ondragstart="drag(event)" width="30" height="80">
+        <img id="drag5" src="arc-en-ciel/arc5.png" draggable="true" ondragstart="drag(event)" width="30" height="80">
+        <img id="drag2" src="arc-en-ciel/arc2.png" draggable="true" ondragstart="drag(event)" width="30" height="80">
+    </div>
+    <p id="message"></p>
+</body>
+<script src="script.js"></script>
+
+</html>

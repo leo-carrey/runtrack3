@@ -1,0 +1,19 @@
+#article1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.loser {
+    color: red;
+}
+
+.win {
+    color: green;
+}
