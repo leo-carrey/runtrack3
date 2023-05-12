@@ -10,20 +10,22 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
-
     win_lose(data);
-
-
 }
+
 artemp = []
 arrwin = ['drag6', 'drag5', 'drag4', 'drag3', 'drag2', 'drag1']
 function win_lose(data) {
     artemp.unshift(data);
-    console.log(artemp)
-    console.log(arrwin)
-    if (artemp[0] === arrwin[0] && artemp[1] === arrwin[1] && artemp[2] === arrwin[2] && artemp[3] === arrwin[3] && artemp[4] === arrwin[4] && artemp[5] === arrwin[5]) {
+    let cond = true
+    for (i = 0; i < arrwin.length; i++) {
+        if (arrwin[i] != artemp[i]) {
+            cond = false
+        }
+    }
+    if (cond == true) {
         printMess("Vous avez gagné", "win");
-    } else if (artemp !== arrwin) {
+    } else if (cond == false) {
         printMess("Vous avez perdu", "loser");
     }
 }
